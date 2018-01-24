@@ -55,7 +55,7 @@ doc.addField("score_update_field", (i+1)*5);
 
 **3) 문서 추가**
 
-*1)*에서 생성한 CSEApi 객체를 통해 force,  *2)*와 같이 생성한 CSEDoc 객체를 인자로 문서 추가 호출
+1)에서 생성한 CSEApi 객체를 통해 force,  2)와 같이 생성한 CSEDoc 객체를 인자로 문서 추가 호출
 ```
 // 문서 추가 방식에 대한 선택적 변수
 int force=0;                         
@@ -96,7 +96,7 @@ String result=test.search(responseType, search_params);
 
 **5) 문서 삭제**
 
-삭제하려는 문서의 키 혹은 문서 객체 자체를 *1)*에서 생성한 CSEApi 객체의 삭제 인자로 전달
+삭제하려는 문서의 키 혹은 문서 객체 자체를 1)에서 생성한 CSEApi 객체의 삭제 인자로 전달
 ```
 String result=cse.delete(docKey);
 result=cse.delete(doc);
@@ -130,7 +130,7 @@ String result=cse.updateField(docKey, updateFieldName, updateFieldValue);
 ```
 **8) 색인 정보**
 
-*1)*에서 생성한 CSEApi 객체를 통해 responseType을 인자로 색인 정보 조회 호출
+1)에서 생성한 CSEApi 객체를 통해 responseType을 인자로 색인 정보 조회 호출
 ```
 //httpget요청의 responseType 지정(json,xml)
 String responseType="json";         
